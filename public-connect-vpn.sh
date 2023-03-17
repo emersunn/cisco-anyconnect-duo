@@ -22,7 +22,7 @@ if [ -z "${VPN_PASSWORD}" ]; then
   fi
 fi
 
-# Make temp file for anyconnect to read from and write in user, password, and duo method
+# Make temp file for anyconnect to read from — with user, password, and duo method
 TMPFILE=$(mktemp creds.XXXXXX)
 >> $TMPFILE
 echo ${VPN_USER} > $TMPFILE
