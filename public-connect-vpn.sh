@@ -6,7 +6,7 @@
 VPN_HOST="foo.bar"         # Replace with your VPN server's hostname or IP address
 VPN_USER="foobar"          # Replace with your VPN username
 VPN_PASSWORD=""            # Leave blank to use keychain password
-DUO_FACTOR="push"          # Can be "push" "phone" or "sms"
+DUO_FACTOR="push"          # Can be "push", "phone" or "sms"
 KEYCHAIN_ITEM="AnyConnect-${VPN_HOST}" # Can be any name you prefer this example creates a keychain item called "AnyConnect-foo.bar"
  
 # Get VPN password from keychain, if not available add VPN password to keychain
