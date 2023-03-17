@@ -12,7 +12,7 @@ KEYCHAIN_ITEM="AnyConnect-${VPN_HOST}" # Can be any name you prefer this example
 # Get VPN password from keychain, if not available add VPN password to keychain
 # Type in password carefully! 
 # If it's wrong you won't get a chance to try again
-# If you put in the wrong password, delete it in Keychain and try script again
+# If you put in the wrong password, delete it in Keychain and run the script again
 if [ -z "${VPN_PASSWORD}" ]; then
   VPN_PASSWORD=$(security find-generic-password -a "${VPN_USER}" -s "${KEYCHAIN_ITEM}" -w 2>/dev/null)
   if [ -z "${VPN_PASSWORD}" ]; then
