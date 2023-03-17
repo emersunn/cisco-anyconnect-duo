@@ -34,4 +34,4 @@ echo "Connecting to VPN..."
 /opt/cisco/anyconnect/bin/vpn -s < "$TMPFILE" connect ${VPN_HOST}
 
 # Delete temp file
-rm creds.*
+rm $TMPFILE
