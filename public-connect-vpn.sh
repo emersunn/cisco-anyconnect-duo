@@ -7,7 +7,7 @@ VPN_HOST="foo.bar"         # Replace with your VPN server's hostname or IP addre
 VPN_USER="foobar"          # Replace with your VPN username
 VPN_PASSWORD=""            # Leave blank to use keychain password
 DUO_FACTOR="push"          # Can be "push", "phone" or "sms"
-KEYCHAIN_ITEM="AnyConnect-${VPN_HOST}" # Can be any name you prefer this example creates a keychain item called "AnyConnect-foo.bar"
+KEYCHAIN_ITEM="AnyConnect-${VPN_HOST}" # Can be any name you prefer, this example creates a keychain item called "AnyConnect-foo.bar"
  
 # Get VPN password from keychain, if not available add VPN password to keychain
 # Type in password carefully! 
@@ -36,6 +36,6 @@ echo "Connecting to VPN..."
 # Delete temp file
 rm $TMPFILE
 
-# You might want to make a seperate disconnect script, put this in a new file
+# You might want to make a seperate disconnect script, put this in a new file:
 # echo "Disconnecting…"
 # /opt/cisco/anyconnect/bin/vpn disconnect
