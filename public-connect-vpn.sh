@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Connect to VPN using Cisco AnyConnect, MacOS Keychain, and the authentication method AKA "second password"
+# Connect to VPN using Cisco AnyConnect, MacOS Keychain, and the Duo authentication method AKA "second password"
 
 # Variables
 VPN_HOST="foo.bar"         # Replace with your VPN server's hostname or IP address
