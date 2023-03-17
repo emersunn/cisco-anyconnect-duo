@@ -8,6 +8,12 @@ VPN_USER="foobar"          # Replace with your VPN username
 VPN_PASSWORD=""            # Leave blank to use keychain password
 DUO_FACTOR="push"          # Can be "push", "phone" or "sms"
 KEYCHAIN_ITEM="AnyConnect-${VPN_HOST}" # Can be any name you prefer, this example creates a keychain item called "AnyConnect-foo.bar"
+
+# Check if VPN is already connected
+if scutil --nc status "${KEYCHAIN_ITEM}" | grep -q Connected; then
+  echo "VPN is already connected."
+  exit 0
+fi
  
 # Get VPN password from keychain, if not available add VPN password to keychain
 # Type in password carefully! 
