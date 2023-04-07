@@ -33,3 +33,10 @@ If you wish to create a separate script for disconnecting from the VPN, create a
 echo "Disconnecting…"
 /opt/cisco/anyconnect/bin/vpn disconnect
 ```
+## Troubleshooting
+
+- If you've entered the wrong VPN password and the script is not allowing you to enter the correct one, open the Keychain Access app on your Mac, find the Keychain item (the default is "AnyConnect-foo.bar"), delete it, and then run the script again.
+
+## Disclaimer
+
+Use this script at your own risk. Always follow your organization's security policies and guidelines.
