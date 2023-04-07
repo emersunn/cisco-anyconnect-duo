@@ -35,7 +35,3 @@ echo "Connecting to VPN..."
 
 # Delete temp file
 rm $TMPFILE
-
-# To make a seperate disconnect script put this in a new file:
-# echo "Disconnecting…"
-# /opt/cisco/anyconnect/bin/vpn disconnect
