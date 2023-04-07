@@ -27,7 +27,7 @@ This script automates the process of connecting to a VPN using Cisco AnyConnect 
 
 2. Save the script, and then run it in a terminal window. The script will either connect to the VPN using the stored Keychain password or prompt for input if the password is not found.
 
-3. (optional) Assign the script to a keystroke or shortcut.
+3. (reccomeded) Assign the script to a keystroke or shortcut.
 
 If you wish to create a separate script for disconnecting from the VPN, create a new file with the following content:
 
